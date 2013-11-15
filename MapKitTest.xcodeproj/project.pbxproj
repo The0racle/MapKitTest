@@ -17,7 +17,10 @@
 		772A2156177E4C140000581D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A2155177E4C140000581D /* Default@2x.png */; };
 		772A2158177E4C140000581D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 772A2157177E4C140000581D /* Default-568h@2x.png */; };
 		772A215B177E4C140000581D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772A2159177E4C140000581D /* MainStoryboard.storyboard */; };
-		772A215E177E4C140000581D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772A215D177E4C140000581D /* ViewController.m */; };
+		772A2166177E4CB90000581D /* MapItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772A2165177E4CB90000581D /* MapItemViewController.m */; };
+		772A2168177E4E000000581D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772A2167177E4E000000581D /* CoreLocation.framework */; };
+		772A216A177E4E050000581D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772A2169177E4E050000581D /* MapKit.framework */; };
+		772A216C177E50520000581D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772A216B177E50520000581D /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,11 @@
 		772A2155177E4C140000581D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		772A2157177E4C140000581D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		772A215A177E4C140000581D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		772A215C177E4C140000581D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		772A215D177E4C140000581D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		772A2164177E4CB90000581D /* MapItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapItemViewController.h; sourceTree = "<group>"; };
+		772A2165177E4CB90000581D /* MapItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapItemViewController.m; sourceTree = "<group>"; };
+		772A2167177E4E000000581D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		772A2169177E4E050000581D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		772A216B177E50520000581D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772A216C177E50520000581D /* AddressBook.framework in Frameworks */,
+				772A216A177E4E050000581D /* MapKit.framework in Frameworks */,
+				772A2168177E4E000000581D /* CoreLocation.framework in Frameworks */,
 				772A2142177E4C140000581D /* UIKit.framework in Frameworks */,
 				772A2144177E4C140000581D /* Foundation.framework in Frameworks */,
 				772A2146177E4C140000581D /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,9 @@
 		772A2135177E4C140000581D = {
 			isa = PBXGroup;
 			children = (
+				772A216B177E50520000581D /* AddressBook.framework */,
+				772A2169177E4E050000581D /* MapKit.framework */,
+				772A2167177E4E000000581D /* CoreLocation.framework */,
 				772A2147177E4C140000581D /* MapKitTest */,
 				772A2140177E4C140000581D /* Frameworks */,
 				772A213F177E4C140000581D /* Products */,
@@ -86,8 +98,8 @@
 				772A2150177E4C140000581D /* AppDelegate.h */,
 				772A2151177E4C140000581D /* AppDelegate.m */,
 				772A2159177E4C140000581D /* MainStoryboard.storyboard */,
-				772A215C177E4C140000581D /* ViewController.h */,
-				772A215D177E4C140000581D /* ViewController.m */,
+				772A2164177E4CB90000581D /* MapItemViewController.h */,
+				772A2165177E4CB90000581D /* MapItemViewController.m */,
 				772A2148177E4C140000581D /* Supporting Files */,
 			);
 			path = MapKitTest;
@@ -175,7 +187,7 @@
 			files = (
 				772A214E177E4C140000581D /* main.m in Sources */,
 				772A2152177E4C140000581D /* AppDelegate.m in Sources */,
-				772A215E177E4C140000581D /* ViewController.m in Sources */,
+				772A2166177E4CB90000581D /* MapItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
